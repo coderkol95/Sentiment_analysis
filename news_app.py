@@ -67,7 +67,7 @@ try:
         sentiments=predict(items)
         plot_proba(sentiments)
         st.write("Sentiment mean:",sentiments.mean())
-        out="Predicted movement: Down" if sentiments.mean()>=0.519 else "Predicted movement: Up"
+        out="Predicted movement: Down" if sentiments.mean()>=0.5195 else "Predicted movement: Up"
         st.write(out)
 
 except:
