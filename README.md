@@ -59,7 +59,7 @@ To do sentiment analysis and predict stock movement we are scraping the [live](h
 
 # Deployment
 
-The model is deployed using streamlit at:https://share.streamlit.io/coderkol95/data-science-projects/news_app.py
+The model is deployed using streamlit at: https://share.streamlit.io/coderkol95/sentiment_analysis/news_app.py
 
 It accepts the URL for the blog and using regex retrieves the second page. Then it performs sentiment analysis, plots a graph of the sentiment distribution and gives the mean sentiment and prediction value.
 
@@ -97,6 +97,6 @@ It accepts the URL for the blog and using regex retrieves the second page. Then 
 30|9-July-2021|Down|0.5080|Up|10|
 31|12-July-2021|Down|0.5077|Up|11|
 32|13-July-2021|Up|0.5306|Down|12|
-33|14-July-2021||||-|
+33|14-July-2021|Up|0.5263|Down|13|
 34|15-July-2021||||-|
 35|16-July-2021||||-|
