@@ -38,7 +38,7 @@ def predict(items):
     return sentiments
 
 try:
-    st.title("Welcome to the Nifty movement prediction app")
+    st.title("Welcome to the NIFTY movement prediction app")
     st.markdown("But don't hold me against it!")
     st.markdown("Please go to the first blog [here](https://economictimes.indiatimes.com/markets/stocks/liveblog) and paste its URL below")
     url1=st.text_input("Please enter the URL for the ET live blog(.cms)")
@@ -71,7 +71,7 @@ try:
         st.write(out)
 
 except:
-    st.write("Waiting for your input")
+    st.write("Waiting for your input . . .")
 
 
 
