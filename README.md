@@ -98,5 +98,5 @@ It accepts the URL for the blog and using regex retrieves the second page. Then 
 31|12-July-2021|Down|0.5077|Up|11|
 32|13-July-2021|Up|0.5306|Down|12|
 33|14-July-2021|Up|0.5263|Down|13|
-34|15-July-2021||||-|
-35|16-July-2021||||-|
+34|15-July-2021|Up|0.5197|Down|14|
+35|16-July-2021|Down|0.5251|Down|-|
