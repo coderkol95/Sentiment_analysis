@@ -41,7 +41,7 @@ try:
     st.title("Welcome to the Nifty movement prediction app")
     st.markdown("But don't hold me against it!")
     st.markdown("Please go to the first blog [here](https://economictimes.indiatimes.com/markets/stocks/liveblog) and paste its URL below")
-    url1=st.text_input("Please enter the URL(s) for the ET live blog(.cms)")
+    url1=st.text_input("Please enter the URL for the ET live blog(.cms)")
 
     pattern=re.findall("[\d]{6,}",url1)
     url2=re.sub(pattern[0],f"msid-{pattern[0]},curpg-2",url1)
