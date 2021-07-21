@@ -17,19 +17,19 @@ When the probability is above a particular threshold, it predicts the positive c
 
 ## Rule based model performance
 
+The features were generated after running a TFIDF transformation on the news.
+
 Model| Accuracy|	Precision|	Recall|	F1 score|
 |---|---|---|---|---|
-GaussianNB|	0.883871|	0.888646|	0.992683|	0.937788|
-Random Forest|	0.877419|	0.881210|	0.995122|	0.934708|
-SVM|	0.873118|	0.887417|	0.980488|	0.931634|
-GBM|	0.875269|	0.909302|	0.953659|	0.930952|
-DecisionTree|	0.851613|	0.891954|	0.946341|	0.918343|
-Adaboost|	0.851613|	0.895592|	0.941463|	0.917955|
-BernoulliNB|	0.855914|	0.927681|	0.907317|	0.917386|
-Logistic|	0.843011|	0.896471|	0.929268|	0.912575|
-KNN|	0.763441|	0.926136|	0.795122|	0.855643|
-
-We'll use GBM based on the above table as it scores >=0.90 in precision, recall and F1 score. Also, a very high recall and stagnant precision score indicates that those models predict the negative class for almost all the observations in the test set.
+GaussianNB|	0.913978	|0.913978|	1.000000|	0.955056|
+Random Forest|	0.911828	|0.913793|	0.997647|	0.953881|
+Logistic|	0.901075|	0.914661|	0.983529|	0.947846|
+SVM|	0.898925|	0.914474|	0.981176	|0.946652|
+Adaboost	|0.877419	|0.922018|	0.945882	|0.933798|
+DecisionTree	|0.866667|	0.921114	|0.934118	|0.927570|
+GBM|	0.862366	|0.913043|	0.938824|	0.925754|
+BernoulliNB|	0.853763|	0.936430|	0.901176|	0.918465|
+KNN	|0.823656	|0.931990|	0.870588|	0.900243|
 
        
 ## Automated model performance
@@ -48,9 +48,7 @@ Precision:  0.8837749883774988
 
 Accuracy:  0.8299612569952648
 
-As we can see that the performance is very comparable. Automated sentiment analysis will be very helpful in the cases of cold start and it is also easier to use. However it may require regular tweaking of the probability threshold to keep making money in the market.
-
-
+As we can see that the performance is very comparable. Automated sentiment analysis will be very helpful in the cases of cold start and it is also easier to use. 
 
 
 # Web scraping
@@ -100,3 +98,8 @@ It accepts the URL for the blog and using regex retrieves the second page. Then 
 33|14-July-2021|Up|0.5263|Down|13|
 34|15-July-2021|Up|0.5197|Down|14|
 35|16-July-2021|Down|0.5251|Down|-|
+36|19-July-2021|Down|0.5292|Down|-|
+37|21-July-2021|Down|0.5052|Up|15|
+38|22-July-2021||||-|
+39|23-July-2021||||-|
+40|24-July-2021||||-|
